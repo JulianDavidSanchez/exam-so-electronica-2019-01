@@ -13,10 +13,10 @@ tiempos de respuesta
 0.148s
 0.135s
 
-Considerando que tener que cerrar y abrir la puerta en cada ciclo, además de
-ser un proceso adicional, se requieren más recursos y editar puertas, por
-eso el tiempo de respuesta con la puertas dentro del ciclo es mayor que
-con las puertas antes del ciclo, ya que sólo se debía hacer el proceso una
+AL considerar que se tiene que cerrar y abrir la puerta en cada ciclo, además de
+ser un proceso adicional, esto se requie más recursos y además se editan puertas, por
+eso el tiempo de respuesta con las puertas dentro del ciclo es mayor que
+con las puertas antes del ciclo.
 vez por cada hilo.
 
 
