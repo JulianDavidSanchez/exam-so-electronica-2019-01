@@ -7,7 +7,6 @@
 volatile float v = 0;
 
 void *math(void *argc) {
-float x = 1250;
 float y = 350;
 float z = 25;
 v = z/y;
