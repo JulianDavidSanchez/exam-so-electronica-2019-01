@@ -1,0 +1,22 @@
+Prueba hecha con ./pregunta1 1000000.
+tiempo tomado con: time ./pregunta1 1000000
+(se utiliza el tiempo real como referencia)
+
+con abrir puerta antes del for (pregunta1.c):
+tiempo promedio (casi siempre fue el mismo) de respuesta 0.008 s.
+
+con abrir puerta dentro del for(pregunta11.c):
+tiempos de respuesta
+0.139s
+0.114s
+0.139s
+0.148s
+0.135s
+
+Considerando que tener que cerrar y abrir la puerta en cada ciclo, además de
+ser un proceso adicional, se requieren más recursos y editar puertas, por
+eso el tiempo de respuesta con la puertas dentro del ciclo es mayor que
+con las puertas antes del ciclo, ya que sólo se debía hacer el proceso una
+vez por cada hilo.
+
+
