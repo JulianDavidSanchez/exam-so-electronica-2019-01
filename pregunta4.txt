@@ -1,0 +1,4 @@
+1. La utilización de la CPU será del 100%. Tomando en cuenta la naturaleza del programa
+y la ejecución del comando. Estamos generando una utilización intensiva en CPU.
+
+2. El tiempo que tardan ambos procesos es 10 unidades de tiempo.
