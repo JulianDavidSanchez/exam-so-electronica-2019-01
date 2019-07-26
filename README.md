@@ -19,7 +19,7 @@ https://poesiabinaria.net/2014/12/buscar-un-archivo-en-el-path-en-c/
 Algunos programas requieren de librerías especiales
 como [common.h](common.h) y [mycommon.h](mycommon.h), por ello están estos archivos.
 
-Algunos programas requieren de la ejecución:
+Algunos programas requieren del comando:
 ```
 gcc pregunta#.c -o pregunta# -pthread
 ```
