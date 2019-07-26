@@ -33,7 +33,7 @@ int main(int argc, char*argv[]) {
 	} else { //PADRE.
 
 	printf("Soy el proceso padre de  %d  (Mi es pid:%d)\nDormiré 2 segundos...\n",rc, (int) getpid());
-	sleep(3);
+	sleep(2);
 	printf("Me desperté. Ya voy a terminar, adelante Hijo\n");
 	*number = 1; //activador de hijo. Debe ir al final del código del padre.
         sleep(1); //Lo pongo para que no se junte tanto texto.
