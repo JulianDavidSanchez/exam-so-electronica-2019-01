@@ -29,7 +29,7 @@ pthread_create(&p2, NULL, parte2, NULL);
 
 pthread_join(p1, NULL);
 pthread_join(p2, NULL);
-
+printf("Demostración de resultado de variable global: %f\n", v); //Confirmar.
 return 0;
 }
 
