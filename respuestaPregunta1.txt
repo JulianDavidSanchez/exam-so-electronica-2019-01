@@ -4,9 +4,9 @@ Forma de compilar: gcc pregunta1.c -o pregunta1 -pthread,
 se incrementa la variable compartida y se abre la puerta una vez 
 finalizado este ciclo for.
 
-|pregunta11.c| es el programa que ubica dentro del ciclo for, cierra la puerta
+|pregunta11.c| es el programa que ubica dentro del ciclo for: cierra la puerta
 justo antes de incrementar la variable compartida y abre 
-la puerta justo después de haberla incrementado.
+la puerta justo después de haberla incrementado. Así hasta finalizar el ciclo.
 
 
 Pruebas con:
@@ -16,7 +16,7 @@ Pruebas con:
 Tiempo tomado con:
 time ./pregunta1 1000000
 time ./pregunta11 1000000
-(se utiliza el tiempo real como referencia)
+(de los tiempos de <time>, se utiliza el tiempo real como referencia)
 
 Programa que cierra puerta antes del for (pregunta1.c):
 tiempos de respuesta:
