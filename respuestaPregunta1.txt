@@ -27,7 +27,7 @@ tiempos de respuesta:
 0.011s (se elimina)
 
 
-con abrir puerta dentro del for(pregunta11.c):
+Programa que abre/cierra puerta dentro del for (pregunta11.c):
 tiempos de respuesta
 0.301s (se elimina)
 0.295s
@@ -36,8 +36,7 @@ tiempos de respuesta
 0.204s (se elimina)
 
 CONCLUSIÓN:
-Pregunta1.c simplemente tiene que realizar una abertura de puertas ya que 
-esta abertura está fuera del ciclo. Respecto a pregunta11.c, este programa tiene 
-que cerrar y abrir puertas en cada ciclo por lo que consumirá 
-más tiempo y recursos. Así, vemos como en los tiempos de respuesta de
-pregunta11.c requiere de más recursos y tiempo para finalizar.
+Pregunta1.c simplemente tiene que realizar una sóla abertura de puertas (por hilo), en la cuál se realizará el ciclo.
+Respecto a pregunta11.c, este programa tiene que cerrar y abrir puertas en cada paso del ciclo por lo que consumirá 
+más tiempo y recursos. Así, experimentalmente vemos cómo en los tiempos de respuesta de
+pregunta11.c, a éste, le cuesta más tiempo finalizar que a pregunta1.c.
