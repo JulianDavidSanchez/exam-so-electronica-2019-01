@@ -39,5 +39,5 @@ CONCLUSIÓN:
 Pregunta1.c simplemente tiene que realizar una abertura de puertas ya que 
 esta abertura está fuera del ciclo. Respecto a pregunta11.c, este programa tiene 
 que cerrar y abrir puertas en cada ciclo por lo que consumirá 
-más tiempo y recursos. Así, vemos como en los tiempos de respuesta 
+más tiempo y recursos. Así, vemos como en los tiempos de respuesta de
 pregunta11.c requiere de más recursos y tiempo para finalizar.
