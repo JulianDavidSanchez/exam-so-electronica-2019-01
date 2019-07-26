@@ -4,40 +4,32 @@
 #include <sys/time.h>
 #include <unistd.h>
 
-volatile float v = 0;
+float v = 0;
 
-void *math(void *argc) {
+void *parte1(void *argc) {
 float y = 350;
 float z = 25;
 v = z/y;
-printf("Hilo 1 con z/y: %f \n", v);
+printf("Hilo 1 operando v = z/y: %f \n", v);
 }
 
-void *final(void *argc){
+void *parte2(void *argc){
 sleep(2);
-int x= 1250;
-int f = x*v;
-printf("Hilo 2 con operación x*v: %d\n", f);
+int x = 1250;
+v = x*v;
+printf("Hilo 2 operando x*v: %f\n", v);
 }
 
 int main(int argc, char*argv[]) {
 
 pthread_t p1, p2;
 
-//printf("Initial value : %d\n", p);
-
-
-pthread_create(&p1, NULL, math, NULL);
-
-pthread_create(&p2, NULL, final, NULL);
+pthread_create(&p1, NULL, parte1, NULL);
+pthread_create(&p2, NULL, parte2, NULL);
 
 pthread_join(p1, NULL);
-
 pthread_join(p2, NULL);
 
-//printf("Final value : %d\n", v);
-
 return 0;
-
 }
 
