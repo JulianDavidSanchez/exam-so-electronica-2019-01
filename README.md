@@ -3,8 +3,14 @@ JULIÁN DAVID SÁNCHEZ GIRALDO - 1827112.
 ## Notas
 El nombre de cada archivo corresponde a la pregunta, algunos archivos tienen comentarios
 dentro del código por si acaso.
+
 [pregunta1.c](pregunta1.c) y [pregunta11.c](pregunta11.c) corresponden al mismo punto. El archivo explicativo
 es [respuestaPregunta1.txt](respuestaPregunta1.txt).
+
+[pregunta5.c](pregunta5.c) tiene de referencia el siguiente link:
+```
+https://poesiabinaria.net/2014/12/buscar-un-archivo-en-el-path-en-c/
+```
 
 Algunos programas requieren de librerías especiales
 como [common.h](common.h) y [mycommon.h](mycommon.h), por ello están estos archivos.
