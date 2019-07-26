@@ -9,7 +9,7 @@ es [respuestaPregunta1.txt](respuestaPregunta1.txt).
 
 [pregunta2.c](pregunta2.c).
 
-[pregunta3.c](pregunta3.c) se puede presenciar el uso de sleep(), pero la intención de este no es más que la de demostrar que el hijo "espera" (utilicé una estrategia) al padre y también para organizar las salidas del texto al final de la compilación del código, ya que se me juntaba mucho texto y se volvía un desorden.
+[pregunta3.c](pregunta3.c) se puede presenciar el uso de sleep(), pero la intención de éste no es más que la de demostrar que el hijo "espera" (utilicé una estrategia) al padre y también para organizar las salidas del texto al final de la compilación del código, ya que se me juntaba mucho texto y se volvía un desorden.
 
 [pregunta4.txt](pregunta4.txt)
 
