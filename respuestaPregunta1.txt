@@ -1,16 +1,43 @@
-Prueba hecha con ./pregunta1 1000000.
-tiempo tomado con: time ./pregunta1 1000000
+Forma de compilar: gcc pregunta1.c -o pregunta1 -pthread,
+                   gcc pregunta11.c -o pregunta11 -pthread
+|pregunta1.c| es el programa que cierra la puerta antes del ciclo for donde
+se incrementa la variable compartida y se abre la puerta una vez 
+finalizado este ciclo for.
+
+|pregunta11.c| es el programa que ubica dentro del ciclo for, cierra la puerta
+justo antes de incrementar la variable compartida y abre 
+la puerta justo después de haberla incrementado.
+
+
+Pruebas con:
+./pregunta1 1000000
+./pregunta11 1000000
+
+Tiempo tomado con:
+time ./pregunta1 1000000
+time ./pregunta11 1000000
 (se utiliza el tiempo real como referencia)
 
-con abrir puerta antes del for (pregunta1.c):
-tiempo promedio (casi siempre fue el mismo) de respuesta 0.008 s.
+Programa que cierra puerta antes del for (pregunta1.c):
+tiempos de respuesta:
+0.015s (se elimina)
+0.013s
+0.012s
+0.011s
+0.011s (se elimina)
+
 
 con abrir puerta dentro del for(pregunta11.c):
 tiempos de respuesta
-0.139s
-0.114s
-0.139s
-0.148s
-0.135s
+0.301s (se elimina)
+0.295s
+0.280s
+0.241s
+0.204s (se elimina)
 
-Pregunta11.c cierra y abre puertas en cada ciclo for, por lo que es más lenta que pregunta1.c, ya que sólo cierra y abre puertas fuera del ciclo. Así, pregunta1.c es más eficiente y rápido que pregunta11.
+CONCLUSIÓN:
+Pregunta1.c simplemente tiene que realizar una abertura de puertas ya que 
+esta abertura está fuera del ciclo. Respecto a pregunta11.c, este programa tiene 
+que cerrar y abrir puertas en cada ciclo por lo que consumirá 
+más tiempo y recursos. Así, vemos como en los tiempos de respuesta 
+pregunta11.c requiere de más recursos y tiempo para finalizar.
